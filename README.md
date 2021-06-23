@@ -25,7 +25,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - Load balancers help with protecting the availability aspect of the CIA triad by distributing incoming traffic and data to the webservers in the environment. 
-- Jump boxes create a secure admin workstation, giving admins an origination point to launch adminsitrative tasks.
+- Jump boxes create a secure admin workstation, giving admins an origination point to launch administrative tasks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the event logs and system metrics.
 - Filebeat monitors specified log files or directories, collects log events, then forwards them to Elasticsearch or Logstash for indexing. 
@@ -52,7 +52,7 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 - Personal IP Address
 
 Machines within the network can only be accessed by SSH.
-- The Jomp Box Provisioner (10.0.0.5) is the only machine able to connect to the ELK-Server (10.1.0.4) via SSH.
+- The Jump Box Provisioner (10.0.0.5) is the only machine able to connect to the ELK-Server (10.1.0.4) via SSH.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -69,7 +69,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- The main advantage of automating configuration with Ansible is that by creating a playbook you can easily add and duplicate the new VM to run exactly like the previous instalations. Services can be limited or customized, installation and updating can be streamlined, and processes can be replicated.
+- The main advantage of automating configuration with Ansible is that by creating a playbook you can easily add and duplicate the new VM to run exactly like the previous installations. Services can be limited or customized, installation and updating can be streamlined, and processes can be replicated.
 
 The playbook implements the following tasks:
 - Installs docker.io
